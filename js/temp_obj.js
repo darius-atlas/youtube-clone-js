@@ -937,4 +937,4 @@ const music = [
     }
 ]
 
-export { gloAcademy };
+export { gloAcademy, trending, music };

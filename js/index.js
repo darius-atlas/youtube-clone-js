@@ -1,8 +1,14 @@
 //import { API_KEY, CLIENT_ID } from'./API';
-import { gloAcademy } from './temp_obj.js';
+import { gloAcademy, trending, music } from './temp_obj.js';
 import { VideoList } from './components/videoList.js';
+import { TrendsList } from './components/trendsList.js';
+import { MusicList } from './components/musicList.js';
 
 
-const gloAcademyList = document.querySelector('.glo-academy-list');
+const videoList = document.querySelector('.glo-academy-list');
+const trendsList = document.querySelector('.trending-list');
+const musicList = document.querySelector('.music-list');
 
-VideoList(gloAcademyList, gloAcademy);
+VideoList(videoList, gloAcademy);
+TrendsList(trendsList, trending);
+MusicList(musicList, music);
