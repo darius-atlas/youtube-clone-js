@@ -22,7 +22,7 @@ const createCard = (dataVideo) => {
             <h3 class="video-title">${titleVideo}</h3>
             <div class="video-info">
               <span class="video-counter">
-                <span class="video-date">3 days ago</span>
+                <span class="video-date">${currentDate.diff(dateVideo, "days")} days ago</span>
               </span>
               <span class="video-channel">${channelTitle}</span>
             </div>
