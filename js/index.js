@@ -1,4 +1,5 @@
 
+
 const gloAcademyList = document.querySelector('.glo-academy-list');
 
 const createCard = (dataVideo) => {
@@ -26,6 +27,7 @@ const createCard = (dataVideo) => {
               <span class="video-channel">${channelTitle}</span>
             </div>
     `;
+
     return card;
 }
 
