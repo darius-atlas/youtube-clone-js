@@ -937,3 +937,4 @@ const music = [
     }
 ]
 
+export { gloAcademy };
