@@ -2,7 +2,7 @@
 
 export function Card(dataVideo) {
     const imgUrl = dataVideo.snippet.thumbnails.high.url;
-    const videoId = dataVideo.id.videoId;
+    const videoId = typeof dataVideo.id === 'string' ? dataVideo.id : dataVideo.id.videoId;
     const titleVideo = dataVideo.snippet.title;
     const dateVideo = dataVideo.snippet.publishedAt;
     const channelTitle = dataVideo.snippet.channelTitle;
@@ -19,7 +19,8 @@ export function Card(dataVideo) {
             <h3 class="video-title">${titleVideo}</h3>
             <div class="video-info">
               <span class="video-counter">
-                <span class="video-date">${dateVideo} days agod</span>
+              <span class="video-views">80k views</span>
+                <span class="video-date">${dateVideo} days ago</span>
               </span>
               <span class="video-channel">${channelTitle}</span>
             </div>
