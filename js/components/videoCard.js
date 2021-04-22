@@ -9,8 +9,6 @@ export function Card(dataVideo) {
 
     const dateVideo = dataVideo.snippet.publishedAt;
     const channelTitle = dataVideo.snippet.channelTitle;
-    
-    //const videoViews = typeof dataVideo.statistics.viewCount === 'undefined';
 
     const card = document.createElement("div");
     card.classList.add('video-card');
